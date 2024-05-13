@@ -41,16 +41,51 @@ body{
 }
 
 .container-imagem {
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
+    width: 100%; /* Define a largura do contêiner para ocupar toda a largura da página */
+    height: 65vh; /* Define a altura do contêiner conforme necessário */
+    background-image: url('sets/tacas.jpeg');
+    background-size: 100% auto; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner e mantém a altura proporcional */
+    background-position: center;
 }
 
-.imagem-tacas {
+.secao-compras{
+    height: 150vh;
+    display: flex; /* alterado de block para flex */
+    flex-direction: column; /* mantém os itens em coluna */
+    justify-content: center;
+    gap: 5%;
+}
+
+.secao-compras__titulo{
+    margin-left: 7.5vw;
+}
+
+.secao-compras__produtos{
+    height: 38%;
     width: 100%;
-    position: absolute; 
-    top: 75%;
-    left: 0;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.secao-compras__produtos__produto{
+    width: 25%;
+    border: 2px solid black;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    padding: 10vh;
+    color: var(--cor-texto1);
+    display: flex;
+    gap: 40px;
+}
+
+footer h2{
+    font-size: 3em;
+}
+
+footer p{
+    align-self: flex-end; /* Alinha o próprio item no final do container */
+    margin-bottom: 8px;
 }
