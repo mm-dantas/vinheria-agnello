@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
 :root{
     --cor-primaria: #200001;
     --cor-secundaria: #f2efe9;
@@ -49,7 +52,7 @@ body{
 }
 
 .secao-compras{
-    height: 150vh;
+    height: 180vh;
     display: flex; /* alterado de block para flex */
     flex-direction: column; /* mantém os itens em coluna */
     justify-content: center;
@@ -57,20 +60,25 @@ body{
 }
 
 .secao-compras__titulo{
-    margin-left: 7.5vw;
+    margin-left: 14.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .secao-compras__produtos{
-    height: 38%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 4.5%;
 }
 
 .secao-compras__produtos__produto{
-    width: 25%;
-    border: 2px solid black;
+    width: 20.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 footer{
@@ -88,4 +96,43 @@ footer h2{
 footer p{
     align-self: flex-end; /* Alinha o próprio item no final do container */
     margin-bottom: 8px;
+}
+
+.add-carrinho{
+    height: 7%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vinho-box{
+    background-color: var(--cor-secundaria);
+    height: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vinho-box__imagem{
+    width: 95%;
+    margin-top: -40px;
+}
+
+.nome-vinho{
+    padding: 2.5% 0 0.5% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.preco{
+    padding: 0.5% 0 2.5% 0;
+    color: var(--cor-preco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.add-carrinho_text{
+    font-family: 'Montserrat', sans-serif;
 }
